@@ -1,0 +1,6 @@
+{
+  "name": "Towfik Education Management System",
+  "description": "Complete Android Educational Institute Management App with Admin and Student Portals, Attendance, Fees, and Push Notifications",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
