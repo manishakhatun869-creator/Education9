@@ -5,23 +5,13 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v4
-    - name: set up JDK 21
-      uses: actions/setup-java@v4
-      with:
-        java-version: '21'
-        distribution: 'temurin'
-        cache: gradle
+    permissions:
+      contents: write
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew clean assembleDebug assembleRelease bundleRelease
+    steps:
